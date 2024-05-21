@@ -1,7 +1,5 @@
 # SS24 3DUI Project Template: VR Parkour Game
 
-`Available Soon`
-
 ## Overview
 
 - This is a Unity 2022.3.21f3 project 
@@ -41,22 +39,41 @@
     - the user must press `Start Race`button, and then find the `Stop Race` button in the city before countdown expires.
     - See video below for an overview
 
-<hr style="height:0.5px;background-color:grey">
+<!-- <hr style="height:0.5px;background-color:grey"> -->
 
 ## Level Organisation
 
+- _TBD_
+
 ### Player
+
+
+- _TBD_
 
 ### Zones
 
+
+- _TBD_
+
 ### Game Logic 
+
+
+- _TBD_
 
 ### Game Objects
 
+
+- _TBD_
+
 ### Race Tracks
+
+
+- _TBD_
 
 ### Cheats
 
+
+- _TBD_
 
 
 
