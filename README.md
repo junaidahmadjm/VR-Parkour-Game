@@ -35,8 +35,10 @@
     - (Meta Quest or XR Interaction Toolkit Device Simulator)
 - Interactions: Same Techniques as Unity VR Template   
 - Gameplay: 
-    - Time-cPress `Start Race`button, and Find the `Stop Race` button before countdown expires.
-- See video below for an overview
+    - **Simple Time-Challenge Mode** 
+    - A single user must finish a race before a specified time elapsed
+    - the user must press `Start Race`button, and then find the `Stop Race` button in the city before countdown expires.
+    - See video below for an overview
 
 ## Level Organisation
 
