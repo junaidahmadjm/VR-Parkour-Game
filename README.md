@@ -25,7 +25,11 @@
 
 - Open Scene: `level-One`
 - Press Play 
-    - Note: connect Quest 2 before or activate XR Simulator ( Quest or XR Interaction Toolkit Device Simulator)
+    - Note: Before connect the Quest 2 or activate XR Simulator
+    - (Meta Quest or XR Interaction Toolkit Device Simulator)
+- Interactions: Same Techniques as Unity VR Template   
+- Gameplay: Press `Start Race`button, and look for `Stop Race` button before countdown expires.
+- See video below for an overview
 
 ## Level Organisation
 
