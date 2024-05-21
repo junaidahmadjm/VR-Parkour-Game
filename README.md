@@ -25,7 +25,7 @@
 
 - Open Scene: `level-One`
 - Press Play 
-    - note: connect Quest 2 before or activate XR Simulator ( Quest or XR Interaction Toolkit Device Simulaor)
+    - Note: connect Quest 2 before or activate XR Simulator ( Quest or XR Interaction Toolkit Device Simulator)
 
 ## Level Organisation
 
@@ -39,7 +39,8 @@
 
 ### Race Tracks
 
-### Cheats (for quick tests)
+### Cheats
+
 
 
 
