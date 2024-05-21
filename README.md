@@ -33,12 +33,15 @@
 - Press Play 
     - Note: Before connect the Quest 2 or activate XR Simulator
     - (Meta Quest or XR Interaction Toolkit Device Simulator)
-- Interactions: Same Techniques as Unity VR Template   
+- Interactions: 
+    - Same Techniques as Unity VR Template   
 - Gameplay: 
     - **Simple Time-Challenge Mode** 
     - A single user must finish a race before a specified time elapsed
     - the user must press `Start Race`button, and then find the `Stop Race` button in the city before countdown expires.
     - See video below for an overview
+
+<hr style="height:0.5px;background-color:grey">
 
 ## Level Organisation
 
