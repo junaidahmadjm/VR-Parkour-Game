@@ -4,9 +4,9 @@
 
 ## Overview
 
-- This is a Unity 2022.3.21f3 project containing a basic VR Parkour Game 
-- based on 
-    the Unity VR Template and SimplePoly City (see below)
+- This is a Unity 2022.3.21f3 project 
+- Containing a basic VR Parkour Game for the 3DUI SS24 Team Project
+- Based on the Unity VR Template and SimplePoly City (see below)
 
 
 ## Main Dependencies
@@ -21,6 +21,12 @@
 
 - [Learning Unity and VR Basics Requirements](https://lectures.hci.informatik.uni-wuerzburg.de/ss24/3dui/modules/additional-resources/unity-help-page.html) on module website.
 
+
+## Project 
+
+- [Descriptions and Requirements](https://lectures.hci.informatik.uni-wuerzburg.de/ss24/3dui/modules/additional-resources/project-requirements-summer-page.html)
+
+
 ## Instructions
 
 - Open Scene: `level-One`
@@ -28,7 +34,8 @@
     - Note: Before connect the Quest 2 or activate XR Simulator
     - (Meta Quest or XR Interaction Toolkit Device Simulator)
 - Interactions: Same Techniques as Unity VR Template   
-- Gameplay: Press `Start Race`button, and look for `Stop Race` button before countdown expires.
+- Gameplay: 
+    - Time-cPress `Start Race`button, and Find the `Stop Race` button before countdown expires.
 - See video below for an overview
 
 ## Level Organisation
