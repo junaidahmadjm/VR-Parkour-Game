@@ -15,7 +15,7 @@
 - [SimplePoly City - Low Poly Assets ](https://assetstore.unity.com/packages/3d/environments/simplepoly-city-low-poly-assets-58899)
     - Free and Included - But every student should press on `Add to my assets` for licence reason
 - [Unity XR Interaction Tool Kit and Samples (2.5.4)](https://docs.unity3d.com/Packages/com.unity.xr.interaction.toolkit@2.5/manual/samples.html) 
-- Other dependencies see file: `Packages/manifest.json` (*installed by Unity*)
+- Other dependencies see file: `Packages/manifest.json` (*Automatically installed by Unity*)
 
 ## Basic Unity, VR and XR Simulators Tutorials
 
@@ -32,6 +32,10 @@
 ### Player
 
 ### Zones
+
+### Game Logic 
+
+### Game Objects
 
 ### Race Tracks
 
