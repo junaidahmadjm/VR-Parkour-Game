@@ -6,12 +6,13 @@
 - (original repository from which this repo was fork.)
 - see Commands below:
 
->>> git remote add upstream <original_repository_URL>
+```
+ git remote add upstream <original_repository_URL>
  git fetch upstream
  git checkout main
  git merge upstream/main
  git push origin main
-
+```
 
 # SS24 3DUI Project Template: VR Parkour Game
 
