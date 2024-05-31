@@ -1,20 +1,21 @@
-# Important 
 
+
+# SS24 3DUI Project Template: VR Parkour Game
+
+# Important 
 
 - After cloning the repository for the first time
 - Update it with the last version of the Upstream 
-- (original repository from which this repo was fork.)
-- see Commands below:
+- (original repository from which this repo was forked)
+- See commands below:
 
 ```
- git remote add upstream <original_repository_URL>
+ git remote add upstream https://gitlab2.informatik.uni-wuerzburg.de/hci/students/3dui/ss24/ss24-3dui-project-template.git
  git fetch upstream
  git checkout main
  git merge upstream/main
  git push origin main
 ```
-
-# SS24 3DUI Project Template: VR Parkour Game
 
 ## Overview
 
