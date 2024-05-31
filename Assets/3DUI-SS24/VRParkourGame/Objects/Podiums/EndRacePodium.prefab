@@ -6162,24 +6162,36 @@ PrefabInstance:
       value: Teleport Anchor
       objectReference: {fileID: 0}
     - target: {fileID: 4151308971900942461, guid: 037ba65d346be2a48ad006b9a9a3873e, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: -0.92351687
-      objectReference: {fileID: 0}
-    - target: {fileID: 4151308971900942461, guid: 037ba65d346be2a48ad006b9a9a3873e, type: 3}
-      propertyPath: m_LocalRotation.x
+      propertyPath: m_LocalPosition.x
       value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4151308971900942461, guid: 037ba65d346be2a48ad006b9a9a3873e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4151308971900942461, guid: 037ba65d346be2a48ad006b9a9a3873e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4151308971900942461, guid: 037ba65d346be2a48ad006b9a9a3873e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.9998605
+      objectReference: {fileID: 0}
+    - target: {fileID: 4151308971900942461, guid: 037ba65d346be2a48ad006b9a9a3873e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 5.887054e-12
+      objectReference: {fileID: 0}
+    - target: {fileID: 4151308971900942461, guid: 037ba65d346be2a48ad006b9a9a3873e, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.38355795
+      value: 0.016706306
       objectReference: {fileID: 0}
     - target: {fileID: 4151308971900942461, guid: 037ba65d346be2a48ad006b9a9a3873e, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -4.6562404e-10
       objectReference: {fileID: 0}
     - target: {fileID: 4151308971900942461, guid: 037ba65d346be2a48ad006b9a9a3873e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 405.109
+      value: 358.086
       objectReference: {fileID: 0}
     - target: {fileID: 6707876468356395517, guid: 037ba65d346be2a48ad006b9a9a3873e, type: 3}
       propertyPath: m_RootOrder

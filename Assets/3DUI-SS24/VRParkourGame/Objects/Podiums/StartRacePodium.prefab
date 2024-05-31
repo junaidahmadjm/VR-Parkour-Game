@@ -6442,6 +6442,10 @@ PrefabInstance:
       value: Teleport Anchor
       objectReference: {fileID: 0}
     - target: {fileID: 4151308971900942461, guid: 037ba65d346be2a48ad006b9a9a3873e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4151308971900942461, guid: 037ba65d346be2a48ad006b9a9a3873e, type: 3}
       propertyPath: m_LocalRotation.w
       value: -0.9996601
       objectReference: {fileID: 0}
