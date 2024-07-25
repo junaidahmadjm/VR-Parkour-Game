@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Anchor
   - RaceTrackPodiumMarker
+  - Ground
   layers:
   - Default
   - TransparentFX
@@ -13,9 +14,9 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
-  - 
+  - Player
+  - Collectable
+  - Minimap
   - 
   - 
   - 

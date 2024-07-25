@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/ExternalAssets/Scenes/SampleScene.unity
     guid: 55daccc09a3b69647bbab145b54a3ab3
   - enabled: 1
+    path: Assets/3DUI-SS24/VRParkourGame/Scenes/SplashScene.unity
+    guid: 7c74d6b71ef63af41bef082da98fe698
+  - enabled: 1
     path: Assets/3DUI-SS24/VRParkourGame/Scenes/level-1.unity
     guid: 50cbe09f4a4cd9145bcd36bf01a06b93
   m_configObjects:

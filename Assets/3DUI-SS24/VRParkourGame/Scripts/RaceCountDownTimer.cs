@@ -18,6 +18,8 @@ namespace Assets._3DUI_SS24.VRParkourGame
         private Boolean isRunning = false;
         private float timeElapsed;
 
+        public GameObject GameOverPanel;
+
         public void Begin(float countDownTimeDuration)
         {
             timeDuration = countDownTimeDuration;
@@ -40,7 +42,12 @@ namespace Assets._3DUI_SS24.VRParkourGame
                 if (timeRemaining <= 0.0f)
                 {
                     Debug.Log("Time Expired");
-                    OnTimeExpiredEvent?.Invoke();
+
+                    if (GameOverPanel)
+                        GameOverPanel.SetActive(true);
+
+                    if(OnTimeExpiredEvent!=null)
+                        OnTimeExpiredEvent?.Invoke();
                     isRunning = false;
                 }
             }
