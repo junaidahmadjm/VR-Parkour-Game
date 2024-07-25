@@ -6,87 +6,80 @@ using UnityEngine.InputSystem;
 public class MovementController : MonoBehaviour
 {
     public InputActionProperty LeftControllerInput; 
-    public InputActionProperty RightControllerInput; 
-
-    public InputAction JumpAction;
-
-    public float movementSpeed; 
-    public float jumpForce = 5.0f; 
+    public InputActionProperty RightControllerInput;
+    public InputActionProperty JumpInput;
+    public float movementSpeed;
+    public float JumpHeight = 2.0f;
+    public float Gravity = -9.8f;
     public Transform xrOriginTransform; 
 
     private Vector3 leftControllerValue; 
-    private Vector3 rightControllerValue; 
+    private Vector3 rightControllerValue;
 
-    public GameObject GameObjectToMove;
-    public GameObject GameObjectGivingDir;
-    private Rigidbody rb; 
-    private bool isGrounded;
-    private void OnEnable()
-    {
-        JumpAction.Enable();
-    }
+    private CharacterController characterController;
+    [SerializeField]
+    private Vector3 Velocity;
+    [SerializeField]
+    private bool IsGrounded;
 
     private void Start()
     {
-        
         LeftControllerInput.action.Enable();
         RightControllerInput.action.Enable();
+
+        JumpInput.action.Enable();
+
         
-       
-        //rb = GameObjectToMove.GetComponent<Rigidbody>();
-        //if (rb == null)
-        //{
-        //    Debug.LogError("Rigidbody component missing from GameObjectToMove.");
-        //}
+        characterController = GetComponent<CharacterController>();
+
     }
 
     private void Update()
     {
-       
         leftControllerValue = LeftControllerInput.action.ReadValue<Vector3>();
         rightControllerValue = RightControllerInput.action.ReadValue<Vector3>();
 
         Debug.Log("Left Controller value: " + leftControllerValue);
         Debug.Log("Right Controller value: " + rightControllerValue);
 
-       
+
+        Debug.Log("Left X Value: " + leftControllerValue.x);
+        Debug.Log("Right X Value: " + rightControllerValue.x);
+
         MovePlayer(leftControllerValue);
         MovePlayer(rightControllerValue);
 
-        //if (JumpAction.WasPressedThisFrame() && isGrounded && rb != null)
-        //{
-            
-        //    rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
-        //    isGrounded = false; 
-        //}
+        HandleJump();
+        ApplyGravity();
     }
 
     private void MovePlayer(Vector3 input)
     {
-       
         Vector3 moveDirection = Camera.main.transform.forward * Mathf.Abs(input.y);
         moveDirection.y = 0; 
-
-        
         if (moveDirection.magnitude > 1f)
         {
             moveDirection.Normalize();
         }
-
-        
         xrOriginTransform.Translate(moveDirection * movementSpeed * Time.deltaTime, Space.World);
     }
-    private void OnCollisionEnter(Collision collision)
+
+    void HandleJump()
     {
-       
-        //if (collision.gameObject.CompareTag("Ground"))
-        //{
-        //    isGrounded = true; 
-        //}
+        IsGrounded = characterController.isGrounded;
+        if(IsGrounded && Velocity.y <0)
+        {
+            Velocity.y = 0f;
+        }
+        if(IsGrounded && /*JumpInput.action.triggered*/ (Mathf.Abs(leftControllerValue.x) > 1.5f || Mathf.Abs(rightControllerValue.x) > 1.5f))
+        {
+            Velocity.y += Mathf.Sqrt(JumpHeight * -2f * Gravity);
+        }
     }
 
-    private void OnDisable()
+    void ApplyGravity()
     {
-        JumpAction.Disable();
+        Velocity.y += Gravity * Time.deltaTime;
+        characterController.Move(Velocity * Time.deltaTime);
     }
 }

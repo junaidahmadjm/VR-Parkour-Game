@@ -2200,21 +2200,21 @@
         },
         {
             "name": "Custom",
-            "id": "d79bf175-e356-48e9-aa7d-fbc322751d78",
+            "id": "d69bd2bb-829a-4d12-a6a1-9982e1aaa038",
             "actions": [
                 {
                     "name": "VelocityRight",
                     "type": "Value",
-                    "id": "0dc90df0-3fed-4a30-ab0a-eec5db4dc9a6",
+                    "id": "5d187869-93f8-477a-b827-ff223f3aa0d3",
                     "expectedControlType": "Vector3",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
                 },
                 {
-                    "name": "Velocityleft",
+                    "name": "VelocityLeft",
                     "type": "Value",
-                    "id": "e841243b-4aab-4116-9e48-1966f84ab2aa",
+                    "id": "933a3598-df55-41da-ab75-2121963bed6c",
                     "expectedControlType": "Vector3",
                     "processors": "",
                     "interactions": "",
@@ -2224,7 +2224,7 @@
             "bindings": [
                 {
                     "name": "",
-                    "id": "77092ccf-05c9-4cc2-b816-4d0f4336bc32",
+                    "id": "368203ef-8b1e-4918-b4f9-519fd152f4ca",
                     "path": "<XRController>{RightHand}/deviceVelocity",
                     "interactions": "",
                     "processors": "",
@@ -2235,40 +2235,12 @@
                 },
                 {
                     "name": "",
-                    "id": "de83fa09-0bfe-422f-84d7-a5ed0e18bac3",
+                    "id": "fe9a507a-0450-4f79-8a51-562be1c75852",
                     "path": "<XRController>{LeftHand}/deviceVelocity",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Velocityleft",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                }
-            ]
-        },
-        {
-            "name": "Jump",
-            "id": "2a24f362-28ce-43c2-ac4b-c3e9ad609890",
-            "actions": [
-                {
-                    "name": "JumpButton",
-                    "type": "Button",
-                    "id": "c8618daa-7167-46ef-9b2c-2e0531c34aad",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "Tap",
-                    "initialStateCheck": false
-                }
-            ],
-            "bindings": [
-                {
-                    "name": "",
-                    "id": "f03fec8d-1d00-4a16-9c5e-2c36a61dfc00",
-                    "path": "<XRController>{RightHand}/{TriggerButton}",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "JumpButton",
+                    "action": "VelocityLeft",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

@@ -1,4 +1,5 @@
 ﻿using System;
+using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -8,6 +9,7 @@ namespace Assets._3DUI_SS24.VRParkourGame
     {
         public float timeDuration;
         public float timeRemaining;
+        public TMP_Text DisplayTime;
         public UnityEvent OnTimeExpiredEvent;
         [System.Serializable] public class OnTimeUpdatedEvent : UnityEvent<float> { }
         public OnTimeUpdatedEvent onTimeUpdated;
@@ -38,6 +40,8 @@ namespace Assets._3DUI_SS24.VRParkourGame
             {
                 timeElapsed = Time.time - timeStarted;
                 timeRemaining = Math.Max(timeDuration - timeElapsed, 0.0f);
+                if(DisplayTime)
+                    DisplayTime.text = timeRemaining.ToString();
                 onTimeUpdated?.Invoke(timeRemaining);
                 if (timeRemaining <= 0.0f)
                 {
