@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Anchor
   - RaceTrackPodiumMarker
+  - MyPlayer
+  - Booster
   layers:
   - Default
   - TransparentFX

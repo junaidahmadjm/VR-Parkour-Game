@@ -22,6 +22,13 @@ public class MovementController : MonoBehaviour
     [SerializeField]
     private bool IsGrounded;
 
+    public float Senstivity;
+
+    public static MovementController Instance;
+    private void OnEnable()
+    {
+        Instance = this;
+    }
     private void Start()
     {
         LeftControllerInput.action.Enable();
@@ -55,6 +62,10 @@ public class MovementController : MonoBehaviour
 
     private void MovePlayer(Vector3 input)
     {
+        if(input.magnitude < Senstivity)
+        {
+            return;
+        }
         Vector3 moveDirection = Camera.main.transform.forward * Mathf.Abs(input.y);
         moveDirection.y = 0; 
         if (moveDirection.magnitude > 1f)

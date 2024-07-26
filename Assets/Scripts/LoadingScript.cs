@@ -13,6 +13,7 @@ public class LoadingScript : MonoBehaviour
     }
     private IEnumerator LoadSceneAsync(string Scene)
     {
+        yield return new WaitForSeconds(1.2f);
         AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(Scene);
         asyncLoad.allowSceneActivation = false;
         while (!asyncLoad.isDone)
